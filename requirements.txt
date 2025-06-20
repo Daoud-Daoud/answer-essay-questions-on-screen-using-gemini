@@ -1,0 +1,8 @@
+keyboard
+pyautogui
+pytesseract
+requests
+opencv-python
+numpy
+Pillow
+win10toast
