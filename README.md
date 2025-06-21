@@ -6,53 +6,46 @@ This Python script captures your Windows screen, extracts visible text using OCR
 🎯 Ideal for instantly solving MCQs that appear on your screen—just hit a hotkey!
 
 🚀 Features
-✅ Screen Capture Grabs the visible area of your screen (excluding the taskbar/header).
+  ✅ Screen Capture Grabs the visible area of your screen (excluding the taskbar/header).
 
-✅ OCR (Optical Character Recognition) Uses Tesseract to extract text from the screenshot.
+  ✅ OCR (Optical Character Recognition) Uses Tesseract to extract text from the screenshot.
 
-✅ Gemini AI IntegrationSends the extracted text to Gemini AI and fetches a likely answer.
+  ✅ Gemini AI IntegrationSends the extracted text to Gemini AI and fetches a likely answer.
 
-✅ Overlay Notification Pops up the answer on your screen for a few seconds.
+  ✅ Overlay Notification Pops up the answer on your screen for a few seconds.
 
-✅ Hotkey Trigger Press Ctrl + Shift + Q anytime to activate.
+  ✅ Hotkey Trigger Press Ctrl + Shift + Q anytime to activate.
 
 🛠️ Setup
-1️⃣ Install Tesseract OCR Download and install from tesseract-ocr/tesseract
+  1️⃣ Install Tesseract OCR Download and install from tesseract-ocr/tesseract
 
-Default install path: C:\Program Files\Tesseract-OCR\tesseract.exe
+    Default install path: C:\Program Files\Tesseract-OCR\tesseract.exe
 
-If installed elsewhere, edit the TESSERACT_PATH in main.py.
+  If installed elsewhere, edit the TESSERACT_PATH in main.py.
 
 2️⃣ Install Python Dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
+
+  pip install -r requirements.txt
+
 3️⃣ Set Up Gemini API Get your Gemini API Key from Google.
 
-Set it as an environment variable before running:
+  Set it as an environment variable before running:
 
-bash
-Copy
-Edit
-set GEMINI_API_KEY=your_actual_api_key_here python main.py
-🔒 Or replace "YOUR_GEMINI_API_KEY" directly in the code (not recommended for security).
+  set GEMINI_API_KEY=your_actual_api_key_here python main.py
+  🔒 Or replace "YOUR_GEMINI_API_KEY" directly in the code (not recommended for security).
 
 4️⃣ Run The Script
-bash
-Copy
-Edit
-python main.py
-Press Ctrl + Shift + Q
-➤ Captures screen → Extracts text → Gets answer → Displays overlay!
+  python main.py
+  Press Ctrl + Shift + Q
+  ➤ Captures screen → Extracts text → Gets answer → Displays overlay!
 
 🔐 Security Tips
-❗ Never commit your real API key to GitHub
-✅ Use environment variables or secrets management tools instead.
+  ❗ Never commit your real API key to GitHub
+  ✅ Use environment variables or secrets management tools instead.
 
 💻 Requirements
-Windows OS
-Uses ImageGrab, win10toast, and other Windows-specific tools.
+  Windows OS
+  Uses ImageGrab, win10toast, and other Windows-specific tools.
 
 Python 3.7+
 
